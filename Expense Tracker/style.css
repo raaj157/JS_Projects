@@ -6,79 +6,100 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #8a2be2;
+  background-color: #f0f4f8;
 }
 
 #app {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #e0f7fa; /* Light teal color */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
 }
 
 h2 {
-  color: #8a2be2;
+  color: #00796b;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 input,
 button {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  border-color: #00796b;
+  box-shadow: 0 0 10px rgba(0, 121, 107, 0.3);
 }
 
 button {
-  background-color: #483d8b;
+  background-color: #00796b;
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #6a5acd;
+  background-color: #00897b;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #00695c;
+  transform: scale(1);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #dddddd;
+  padding: 12px 0;
+  transition: all 0.3s ease;
 }
 
 li:hover {
-  background-color: #f5f5f5;
+  background-color: #b2dfdb;
+  transform: scale(1.01);
 }
 
 .delete-icon {
   color: #e74c3c;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .delete-icon:hover {
   color: #c0392b;
+  transform: scale(1.2);
 }
 
 p {
-  color: #555;
-  margin: 10px 0 0;
+  color: #00796b;
+  margin: 20px 0 0;
+  font-size: 18px;
 }
 
 #total {
-  font-size: 1.2em;
-  color: #8a2be2;
+  font-size: 1.5em;
+  color: #00796b;
   font-weight: bold;
 }
